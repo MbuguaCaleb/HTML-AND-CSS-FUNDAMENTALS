@@ -183,6 +183,7 @@ Example when making alerts and the only thing that changes in alerts is color.
     border-color: yellow;
 }
 
+&(ampasard) refers to the parent class
 ```
 
 **Operators**
@@ -246,4 +247,18 @@ article[role="main"]{
   border-width:$size/2;
   border-left-color:black
 }
+```
+
+**Compiling Sass**
+
+```
+(a) Via Npm
+
+sudo npm i -g sass
+
+sass --watch scss/style.scss css/style.css
+sass --watch (main sass file) (output css.file)
+
+Compling cannot happen if there is a mistake.
+
 ```

@@ -1,0 +1,22 @@
+/*Sass Variables*/
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #f4f4f4;
+//$primary-color: #e0ffff;
+$primary-color: #0e6cff;
+$secondary-color: #ff8700;
+
+//set text colot based in bg
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+//Mixin
+//A mixin is like a function but does not return a value
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
