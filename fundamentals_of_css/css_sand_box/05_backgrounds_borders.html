@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background and Borders</title>
+
+    <style>
+
+    /*background color as well as image stakes in the full width of that element which its on by default*/
+    /*border mus thave three minimum properties in order to take effect
+      These are: (a)border-width.
+                 (b)border-color.
+                 (c)border-style.
+    */
+    
+#box-1{
+    background-color: blanchedalmond;
+    /* border-width: 3px;
+    border-color: red;
+    border-style: dashed; */
+    border:3px solid red ;
+    border-radius: 10px;
+}
+
+/*You can be able to  put a background image/color by just keying in background as alternatives to background-image/color*/
+
+/*border radius rounds of our borders*/
+/*You can be able to choose which side of the border to round as shown below*/
+#box-2{
+    background: #333;
+    color: #fff;
+    border-top: blue solid 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+/*background image takes in the width of the element that its on*/
+/*with background images there is also properties that it does take eg background-repeat*/
+#box-3{
+    /* background-image: url('../img/stars.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; */
+
+    /*above summarised*/
+    background:url('../img/stars.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 300px; 
+    width: 600px;
+}
+
+/*backgroun attachment fixed fixes the image to a position and the image does not move even when you scroll*/
+#box-4{
+    background: url('../img/leaf.png') no-repeat center center;
+    background-attachment: fixed;
+
+}
+    </style>
+</head>
+<body>
+    <div id="box-1">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+    </div>
+    <br>
+    <div id="box-2">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+    </div> <div id="box-3">
+        <h3>Box Three</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+    </div> <div id="box-4">
+        <h3>Box Four</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officia veniam sed eum nam aliquam corporis sit accusamus minus adipisci exercitationem.</p>
+    </div>
+</body>
+</html>

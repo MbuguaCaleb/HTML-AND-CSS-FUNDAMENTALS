@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+
+      /*Element selectors*/
+      /* . is for classes and # is for Id(s)*/
+
+       /*You should think about naming conventions and give your classes better names semanitcally*/
+       /*What you intend to use name it under a class but what is very unique give it an ID*/
+      
+      /*Body Styling*/
+      body{
+          background-color:#ccc;
+      }
+       .primary-heading{
+             color: green;
+         }
+
+         /*# is for Id(s)*/
+         #welcome{
+             background-color: #f4f4f4;
+         }
+
+         /*Mutiple selectors*/
+         #welcome,#about{
+             border: 1px solid rgb(17, 1, 1);
+             padding: 10px;
+             margin-bottom: 5px;
+         }
+
+         /*Nested Selectors*/
+         /*Notice that this is when i am targeting a paragraph inside the welcom div
+         
+         Had i put a comma as a separator it would have applied this stlyle both everything in welcome and p
+         which is not what i want
+         */
+         #welcome p{
+             font-size: 20px;
+         }
+
+         #about{
+             color: white;
+         }
+    </style>
+</head>
+<body id="test">
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, non.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eos!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Fonts</title>
+
+    <style>
+        /*Web Safe fonts*/
+        /*These are fonts that are supported by all types of browsers and which while using them 
+        you do not have to import
+        
+        We use non-web safe fonts eg google fonts by importing them.
+
+        Default font size in 15px
+        Default font type is TimesNewRoman
+        line height
+
+        CSS Units
+
+        1.Absolute Units
+
+        cm-centimeters.
+        mm-millimeters.
+        in-inches
+        px-pixels(1px = 1/96th of 1 inch)----->Most commonly used
+        pt-points
+        pc-picas picas
+
+        2.Relative Units
+
+        % - To  parent element
+        em-Mutiplier of the parant element(whatever the size of your parent mutiply with this)
+        rem-act the same way but you mutiply with the root html element.
+        vw-
+        vh-
+
+        */
+         body{
+             font-family:Arial, Helvetica, sans-serif;
+             font-size: 18px;
+             line-height: 1.6em;
+
+         }
+
+         #welcome p span{
+             font-weight: bold;
+         }
+
+         #about p span{
+            font-style: italic;
+         }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, non.
+         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, non</span></p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eos!
+        <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, non</span>
+           </p>
+    </div>
+
+</body>
+</html> 

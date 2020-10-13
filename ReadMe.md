@@ -1,14 +1,15 @@
 **COURSE PRERIQUISITES**
 
 ```
-(a)This course is for beginners.
 
-(b)Litte to no css under the html crash couse.
+The internet is a global network of computers.
 
-(c)The focus is on HTML 5 Only.
+Each computer/router has an IP  address. (73.186.43.213).There are two types
 
-(d)This is when caleb gets to master the ins and outs of HTML as its His objective this year.
 
+Comp
+HTTP is an application level protocal that runs over TCP/IP protocal
+.
 ```
 
 **NOTES BY**
