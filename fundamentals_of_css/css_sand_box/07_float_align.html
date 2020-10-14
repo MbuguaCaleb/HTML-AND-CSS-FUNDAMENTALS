@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and align</title>
+
+    <style>
+
+/*when we set the margin to auto it adds equal margin in both sides pushing it into the middle(left and right)*/
+/*We should aways use max-width so that the content in our container is responsive*/
+
+/*when i add border  box it doesnt add margin and padding to the actual widths*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+.container{
+    max-width: 960px;
+    /*auto to center in the middle plus addition of margin in the top and bottom*/
+    margin: 30px auto;
+}
+
+.clr{
+    clear: both;
+}
+
+.box{
+    background: #f4f4f4;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.box p{
+    /*Text align*/
+    /*Text align in used for text alignment in the middle*/
+    /*by default text normally is alingned in the middle*/
+    /*remember that similar css properties in the bottom ovverride similar properties at the top*/
+    text-align: left;
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+}
+
+/*floats are the traditional way that alignment was done in css*/
+/*eg arrangement of boxes etc..*/
+/*this has however been repalced by flexbox and css grids which are easier to implement and also work well for responsive design*/
+
+#box-2{
+    float: left;
+    /*Box 2 will be 70% of the maximum container width*/
+    width: 68%;
+}
+
+#box-3{
+    float: right;
+    width: 30%;
+}
+
+/*floats have to be cleared in that when you are using a float and you add an extra element instead of pushing that element down
+it pushes it behind it causing an overllap*/
+
+/*floats are therefore disadvantageous they therefore must be cleared if you are appeding other elements*/
+
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div id="box-1" class="box">
+        <h3>Heading</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam inventore cum ut voluptates laborum eveniet alias libero consequatur molestias exercitationem.</p>
+    </div>
+    <div id="box-2" class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam inventore cum ut voluptates laborum eveniet alias libero consequatur molestias exercitationem.</p>
+    </div>  
+     <div id="box-3" class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam inventore cum ut voluptates laborum eveniet alias libero consequatur molestias exercitationem.</p>
+    </div>
+
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam inventore cum ut voluptates laborum eveniet alias libero consequatur molestias exercitationem.</p>
+    </div>
+</div>
+  
+</body>
+</html>

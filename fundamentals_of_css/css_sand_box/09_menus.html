@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Styling</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+/*NavBar Styling*/
+.navbar{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    background: #4c6ca0;
+    border-radius: 5px;
+    /*so that the background is not removed by floating items*/
+    /*when i do not want a scroll bar when my content exceeds i set that
+    to hidden*/
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+
+}
+
+/*
+When i display something to block it should go to the next line
+The reason this has not is because i have floated my elements to the left
+
+When i say display block it allows me add a margin and padding.Thus its very
+helpful  in spacing out these navbar items
+
+*/
+.navbar li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.navbar li a:hover{
+    background-color: #446190;
+    color: #f4f4f4;
+}
+/*side menu is the ul class with list items for the side menu*/
+
+/*side menu styling*/
+    .side-menu{
+        list-style: none;
+        border: 1px #ddd solid;
+        border-radius: 10px;
+        width: 300px;
+        /*By default unordered list have got paddings of 20px on the sides*/
+        padding: 20px;
+    }
+
+    .side-menu li{
+        font-size: 18px;
+        line-height: 2.4em;
+        border-bottom: dotted 1px #ddd;
+    }
+
+    /*using a pseudo element to remove the last border property*/
+    /*i select the side-menu , i take the list items and for the list items 
+    select the last child*/
+
+    .side-menu li:last-child{
+        border: none;
+    }
+
+.side-menu li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.side-menu li a:hover{
+    color: coral;
+}
+
+</style>
+<body>
+    
+    <ul class="navbar">
+
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+
+    <br><br>
+    <ul class="side-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</body>
+</html>

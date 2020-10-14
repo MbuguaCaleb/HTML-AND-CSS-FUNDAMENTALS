@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model /Margin & Padding</title>
+    <style>
+
+/*Margin is the space in the outside of an element with relation to the elements border*/
+/*padding is the space in the inside of an element with relation to the elements border*/
+/*some html elements like p ,ul,and h1 have default margin and padding .*/
+
+/* CSS  Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*when you do resets as shown above you now must add your own margin and padding to all the elements .
+  All are removed by resetting
+  Woow CSS is doable
+*/
+/*if i do not put box-sizing to border-box the total width of my element is going to be affected by the margin and
+the padding*/
+
+/*Margin is gonna be spacing on the outside of the border*/
+/*When you have many properties the ones that are futher normally
+oveeride those that are further up*/
+.box{
+    background: #f4f4f4;
+    border:12px #777 solid;
+    width: 500px;
+
+    /*padding on all sides*/
+    padding: 20px;
+
+    /*padding per side*/
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    /*padding shorthand = top,right,bottom,left*/
+    padding: 10px 20px 10px 20px;
+
+    /*padding shorthand top/bottom left/right*/
+    padding: 10px 20px;
+
+    /*Margin on all sides*/
+    margin: 20px;
+
+    /*margin per side*/
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+    /*margin shorthand = top,right,bottom,left*/
+    margin: 10px 20px 10px 20px;
+
+    /*margin shorthand top/bottom left/right*/
+    margin: 10px 20px;
+    
+}
+
+.box h3{
+     padding-bottom: 10px; 
+    /* margin-bottom: 10px; */
+}
+.box p{
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, magni. Delectus facilis debitis dolorum porro repellat est, illum sit modi.</p>
+    </div>
+</body>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, magni. Delectus facilis debitis dolorum porro repellat est, illum sit modi.</p>
+    </div>
+</body>
+</html>

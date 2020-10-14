@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links & Buttons</title>
+    <style>
+
+/*by default links are underlined and blue*/
+/*A button normally has got states eg hover and visited*/
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: #333;
+    /*removes the underline*/
+    text-decoration: none;
+}
+
+/*pseudo selector hover*/
+
+a:hover{
+    color: coral;
+}
+
+/* a:visited{
+    color: red;
+} */
+
+a:active{
+    color: red;
+}
+
+/*Buttons normally have styling by default i.e they have a border and padding*/
+
+.btn{
+    background: #4c6ca0;
+    color: #fff;
+    /*removing button border*/
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    /*setting a pointer to the button on hover*/
+    /*unlike a link it does not have it by default*/
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #f4f4f4;
+    background: #446190;
+}
+
+/*from the example above links can be styled exactly as buttons*/
+    </style>
+</head>
+<body>
+    <br>
+    <a href="#" class="btn">My Link</a>
+    <br>
+    <br>
+    <button class="btn">My Button</button>
+</body>
+</html>

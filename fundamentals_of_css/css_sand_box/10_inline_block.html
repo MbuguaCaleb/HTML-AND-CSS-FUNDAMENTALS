@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Styling</title>
+
+    <style>
+        /*display is a very important property in css*/
+        /*It is where we implement
+        (a)Inline and Block level elements.
+
+        (b)Flex
+
+        (c)CSS Grid
+
+        (d)Inline-block
+
+
+        */
+
+
+/*block level elements occupy the full width of the container and any elements which come after them must
+occupy the next line*/
+
+/*Inline elements dont occupy the full width.They only  occupy the space they have to*/
+
+/*you can change an inline element to a block level element for a number of reasons*/
+
+/*changing block level to inline*/
+li{
+    display: inline;
+}
+
+li a{
+    padding-right: 20px;
+}
+
+/*Worthwhile Noting*/
+/*
+
+When it comes to margins and padding, browsers treat inline elements differently. 
+You can add space to the left and right on an inline element, 
+but you cannot add height to the top or bottom padding or 
+margin of an inline element.
+
+*/
+
+/*Inline to block*/
+
+/*we cannot do margin auto for centering a html element if its inline.We therefore must convert it 
+to a block level element .Refer to the rule above*/
+
+
+img{
+    display: block;
+    margin: auto;
+}
+
+/*Edge Case*/
+/*You cannot use width on an inline element*/
+/*The solution to this is using inline-block*/
+/*As well you cannot add margin bottom to an inline element
+We must cconvert it to inline block(which is a mix of both)
+
+*/
+
+.box{
+    box-sizing: border-box;
+    width: 32.8%;
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Technology</a></li>
+        <li><a href="">Business</a></li>
+        <li><a href="">Fashion</a></li>
+    </ul>
+
+    <br><br>
+
+    <img src="../img/leaf.png" alt="My Image">
+
+    <br><br>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Accusamus quos assumenda dolores debitis quaerat maiores nihil deserunt velit libero quae.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Accusamus quos assumenda dolores debitis quaerat maiores nihil deserunt velit libero quae.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Accusamus quos assumenda dolores debitis quaerat maiores nihil deserunt velit libero quae.</p>
+    </div>
+    
+
+</body>
+</html>
