@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test file</title>
+    <style>
+        h1{
+            /*display none is very useful especially when it comes to responsivity*/
+            /* display: none; */
+            /* visibility: hidden; */
+
+           /*The difference between display none and visibility hidden is that display none completely removes the element from the DOM*/
+           /*Visibility hidden removes the element but the space that surrounds it is still visible from the DOM
+           The element is still there in terms of the space.
+           */
+
+          color: blue !important;
+        }
+
+         /*order of precedence*/
+         /*Normally what takes precedence is what is further below in your CSS
+         
+         Classes also have precedence over your HTML Elements(what is in a class overrides the native parent element*/
+         /*Important helps us set the precedence or the order of importance*/
+
+        .hello{
+            color:red;
+            margin-top: -30px;
+            margin-left: -30px;
+        }
+
+        /*Negative margin values*/
+        /*it is possible to have negative margin in your elements*/
+        /*However if its possible it comes in very handy to avoid such*/
+        /*However you cannot have negative padding since padding is not in the inside of your element*/
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates assumenda impedit adipisci? Voluptatem, maiores.</p>
+</body>
+</html>
