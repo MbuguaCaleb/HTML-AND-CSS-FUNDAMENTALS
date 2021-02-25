@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  height: 100vh;
+  border: 20px solid rgb(0, 0, 0);
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+
+  /* flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+
+  /*Flex responsiveness and Oveflow*/
+  /* align-content: center; */
+
+  /*Nesting flex properties*/
+}
+
+.child1 {
+  width: 200px;
+  height: 200px;
+  background: rgb(39, 61, 134);
+  /*flex shrink-grow-and-wrap*/
+  flex: 1 1 300px;
+  /* flex-grow: 2; */
+}
+
+.child2 {
+  width: 200px;
+  height: 200px;
+  background: rgb(172, 57, 53);
+  flex: 1 1 300px;
+  align-self: center;
+  /*Order is used to change the order*/
+  /*The bigger the order the further to the left the element is pushed*/
+  /* order: 3; */
+
+  /*Increases the size of flex item by taking the space of the flex item that was left*/
+  /* flex-grow: 1; */
+}
+
+.child3 {
+  width: 200px;
+  height: 200px;
+  background: rgb(149, 43, 140);
+  flex: 1 1 300px;
+
+  /* flex-grow: 1; */
+
+  /* order: 2; */
+}
+.child4 {
+  width: 200px;
+  height: 200px;
+  background: rgb(82, 53, 79);
+  flex: 1 1 300px;
+  /*isolate and align flex item*/
+  align-self: flex-end;
+
+  /* flex-grow: 1; */
+
+  /* order:4 */
+}
+
+/*Flex Direction property*/
+
+/* flex-direction: column; */
+
+/* justify-content: space-evenly;
+align-items: center; */
